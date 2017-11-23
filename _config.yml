@@ -69,5 +69,5 @@ theme: pure
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:wucb/wucb.github.io.git
+  repo: git@github.com:wucb/wucb.github.io.git,master
   
