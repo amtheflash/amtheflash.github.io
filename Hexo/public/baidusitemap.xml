@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+  <url>
+    <loc>http://yoursite.com/2017/11/14/hello-world/</loc>
+    <lastmod>2017-11-22T07:08:56.166Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2017-11-14T10:27:49.834Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Hexo教程" url="http://yoursite.com/categories/Hexo%E6%95%99%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
+    
+</urlset>
