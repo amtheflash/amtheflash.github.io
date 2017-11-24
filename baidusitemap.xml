@@ -4,13 +4,17 @@
 
     
     
+    
+    
+    
+    
   <url>
-    <loc>http://yoursite.com/2017/11/14/hello-world/</loc>
-    <lastmod>2017-11-22T07:08:56.166Z</lastmod>
+    <loc>http://yoursite.com/2017/11/23/hello-world/</loc>
+    <lastmod>2017-11-23T03:12:52.338Z</lastmod>
     <data>
         <display>
         <title>Hello World</title>
-        <pubTime>2017-11-14T10:27:49.834Z</pubTime>
+        <pubTime>2017-11-23T03:12:52.338Z</pubTime>
         
          
            
@@ -22,8 +26,22 @@
     </url>
 
     
-    
-    
-    
+  <url>
+    <loc>http://yoursite.com/2017/11/23/hello-world%20-%20%E5%89%AF%E6%9C%AC/</loc>
+    <lastmod>2017-11-23T03:12:52.337Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2017-11-23T03:12:52.336Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Hexo教程" url="http://yoursite.com/categories/Hexo%E6%95%99%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
 </urlset>
