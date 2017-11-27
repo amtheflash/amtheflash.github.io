@@ -1,6 +1,6 @@
 ---
 title: Markdown的扩展格式
-tags: md介绍,markdown分类,md
+tags: [markdown分类,md]
 date: 2017-11-27 14:03:44
 categories: Markdown
 toc: true
