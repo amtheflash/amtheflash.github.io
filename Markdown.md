@@ -5,6 +5,14 @@ date: 2017-11-27 14:03:44
 categories: Markdown
 toc: true
 ---
+```
+public static Picasso with(Context context) {    if (singleton == null) {      synchronized (Picasso.class) {        if (singleton == null) {          singleton = new Builder(context).build();        }      }    }    return singleton;  }
+```
+
+作者：panda
+链接：https://www.zhihu.com/question/51705387/answer/131263855
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ## 说明
 ----------
 `Markdown` ```Markdown```是为网络书写者而生的方便`text-to-HTML`工具，它允许人们用一种易读易写的纯文本格式进行书写，然后将其转化成`XHTML`或`HTML`.
