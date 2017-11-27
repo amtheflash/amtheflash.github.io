@@ -18,6 +18,7 @@ toc: true
 ----------
 这种衍生`Markdown`叫做**Github Flavored Markdown**，简称 **GFM** 
 > 详细说明：https://help.github.com/categories/writing-on-github/
+
 #### 与原生Markdown的主要不同：
 ----------
 - 围栏式（`Fenced`）代码块：在代码的上下增加3个反引号```，可选择性定义代码语种，并支持代码高亮。
@@ -50,6 +51,7 @@ toc: true
 
 > 详细的语法说明见：http://fletcherpenney.net 
 这是语法快速查询表：https://rawgit.com/fletcher/human-markdown-reference/master/index.html
+
 #### 与原生Markdown的主要不同：
  - 支持元数据：标题、作者、日期等信息，兼容部分YAML。
  - 支持交叉引用。
@@ -81,6 +83,8 @@ Pandoc本身是一个多格式文档的转换工具，所以Pandoc Markdown与Mu
 
 > 详细的语法说明见：http://pandoc.org/MANUAL.html#pandocs-markdown 
 翻译的中文版：http://pages.tzengyuxio.me/pandoc/
+
+
 #### 与原生Markdown的主要不同：
 
 - 强制换行支持两种方式：行尾两个空格换行，反斜杆换行。
@@ -90,7 +94,7 @@ Pandoc本身是一个多格式文档的转换工具，所以Pandoc Markdown与Mu
 - 支持行区块
 - 不同形式的列表会生成不同的列表
 - 支持连续编号的范例清单，范例项目应用与整个文档，不局限与单一清单
-- 支持定义列表
+- 支持定义列
 - 支持简单表格、多行表格、格框表格和管线表格四种表格样式
 - 支持文件标题区块（类似元数据）
 - 支持删除线
@@ -100,6 +104,7 @@ Pandoc本身是一个多格式文档的转换工具，所以Pandoc Markdown与Mu
 
 ### CommonMark
 由于创始人自2004年Markdown诞生之后就没有更新过Markdown语法，众多的遗留问题没有得到解决，加上扩展语法的自由发展和Markdown编辑器的涌现，导致了很严重的方言和兼容性问题。因此有人希望对Markdown语法进行规整和统一，建立一套Markdown的语法规范，而CommonMark正是这样产物。CommonMark与一般的衍生语法不同，它的目的不是扩展Markdown的功能，而是解决原生markdown的遗留问题和方言问题，规范Markdown的书写，成为Markdown的标准。可惜此举得到Markdown创始人John Gruber的强力反对，所以至今CommonMark并没有得到广泛的认可。但是其实就CommonMark本身而言，它规范了Markdown的各项语法，有许多可取之处。CommonMark的语法说明是所有markdown语法说明中最长最详细的，优先问题、缩进问题、空行问题、嵌套问题等等容易出现语法冲突的地方都作了非常详细的说明
+
 > 详细的语法说明：http://spec.commonmark.org/
 
 #### 与原生Markdown的主要不同：
