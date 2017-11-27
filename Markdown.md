@@ -5,7 +5,7 @@ date: 2017-11-27 14:03:44
 categories: Markdown
 toc: true
 ---
-```javascript
+```java
 public static Picasso with(Context context) {    if (singleton == null) {      synchronized (Picasso.class) {        if (singleton == null) {          singleton = new Builder(context).build();        }      }    }    return singleton;  }
 ```
 
