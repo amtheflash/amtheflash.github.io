@@ -3,6 +3,28 @@
 
 
     
+  <url>
+    <loc>http://yoursite.com/2017/11/27/Markdown/</loc>
+    <lastmod>2017-11-27T06:38:36.294Z</lastmod>
+    <data>
+        <display>
+        <title>Markdown的扩展格式</title>
+        <pubTime>2017-11-27T06:03:44.000Z</pubTime>
+        
+        <tag>markdown分类</tag>
+         
+        <tag>md</tag>
+         
+         
+           
+             
+              <breadCrumb title="Markdown" url="http://yoursite.com/categories/Markdown/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
     
     
@@ -15,24 +37,6 @@
         <display>
         <title>Hello World</title>
         <pubTime>2017-11-24T07:03:27.467Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Hexo教程" url="http://yoursite.com/categories/Hexo%E6%95%99%E7%A8%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/11/24/hello-world/</loc>
-    <lastmod>2017-11-23T03:12:52.338Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2017-11-24T06:27:01.972Z</pubTime>
         
          
            
