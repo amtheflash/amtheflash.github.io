@@ -115,3 +115,5 @@ Pandoc本身是一个多格式文档的转换工具，所以Pandoc Markdown与Mu
 - 支持 \作为换行符。
 - 列表嵌套采用行首内容对齐，而非4个空格
 - Setext式标题支持多行
+
+> 更多Markdown相关知识请访问https://sspai.com/post/37264
