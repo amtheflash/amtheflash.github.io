@@ -94,6 +94,10 @@ button {
 	overflow: visible
 }
 
+.menu-item-about{
+	margin-bottom: 100px;
+}
+
 button,select {
 	text-transform: none
 }
@@ -4596,6 +4600,10 @@ body.no-sidebar .sidebar {
 	padding-left: 0
 }
 
+.collection-item time {
+	margin-left: 23px;
+}
+	
 .repo {
 	position: relative;
 	list-style-type: none;
