@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2017-11-27T07:58:46.025Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://wucb.top/"/>
+  <updated>2017-11-30T08:30:57.942Z</updated>
+  <id>http://wucb.top/</id>
   
   <author>
     <name>wucb</name>
@@ -17,9 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>maven离线使用，本地明明有却提示找不到jar</title>
+    <link href="http://wucb.top/2017/11/29/maven%E7%A6%BB%E7%BA%BF/"/>
+    <id>http://wucb.top/2017/11/29/maven离线/</id>
+    <published>2017-11-29T03:19:55.000Z</published>
+    <updated>2017-11-30T08:30:57.942Z</updated>
+    
+    <content type="html"><![CDATA[<hr><p>有的时候我们的开发环境中没有网络，也没有私服，对就是这样无奈（无语），<strong>明明本地<code>maven</code>仓库中有该jar包，却提示没有</strong>。<br>不妨尝试如下的操作，可能会产生意想不到的结果哦。</p><p>1) 删除<code>maven</code>本地仓库<code>repository</code>中名字为<strong>_remote.repositories</strong>的所有文件。<br>2) 删除<code>maven</code>本地仓库<code>repository</code>中<strong>.lastUpdated</strong>为后缀的所有文件。</p><p>执行以上两步，刷新你的项目，然后就可以测试<code>maven</code>打包了。</p><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;hr&gt;
+&lt;p&gt;有的时候我们的开发环境中没有网络，也没有私服，对就是这样无奈（无语），&lt;strong&gt;明明本地&lt;code&gt;maven&lt;/code&gt;仓库中有该jar包，却提示没有&lt;/strong&gt;。&lt;br&gt;不妨尝试如下的操作，可能会产生意想不到的结果哦。&lt;/p&gt;
+&lt;p&gt;1) 删除&lt;
+      
+    
+    </summary>
+    
+      <category term="maven" scheme="http://wucb.top/categories/maven/"/>
+    
+    
+      <category term="maven，疑难杂症" scheme="http://wucb.top/tags/maven%EF%BC%8C%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Markdown的扩展格式</title>
-    <link href="http://yoursite.com/2017/11/27/Markdown/"/>
-    <id>http://yoursite.com/2017/11/27/Markdown/</id>
+    <link href="http://wucb.top/2017/11/27/Markdown/"/>
+    <id>http://wucb.top/2017/11/27/Markdown/</id>
     <published>2017-11-27T06:03:44.000Z</published>
     <updated>2017-11-27T07:58:46.025Z</updated>
     
@@ -35,19 +62,19 @@
     
     </summary>
     
-      <category term="Markdown" scheme="http://yoursite.com/categories/Markdown/"/>
+      <category term="Markdown" scheme="http://wucb.top/categories/Markdown/"/>
     
     
-      <category term="markdown分类" scheme="http://yoursite.com/tags/markdown%E5%88%86%E7%B1%BB/"/>
+      <category term="markdown分类" scheme="http://wucb.top/tags/markdown%E5%88%86%E7%B1%BB/"/>
     
-      <category term="md" scheme="http://yoursite.com/tags/md/"/>
+      <category term="md" scheme="http://wucb.top/tags/md/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2017/11/24/hello-world%20-%20%E5%89%AF%E6%9C%AC/"/>
-    <id>http://yoursite.com/2017/11/24/hello-world - 副本/</id>
+    <link href="http://wucb.top/2017/11/24/hello-world%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>http://wucb.top/2017/11/24/hello-world - 副本/</id>
     <published>2017-11-24T07:03:27.467Z</published>
     <updated>2017-11-23T03:12:52.338Z</updated>
     
@@ -62,7 +89,7 @@
     
     </summary>
     
-      <category term="Hexo教程" scheme="http://yoursite.com/categories/Hexo%E6%95%99%E7%A8%8B/"/>
+      <category term="Hexo教程" scheme="http://wucb.top/categories/Hexo%E6%95%99%E7%A8%8B/"/>
     
     
   </entry>

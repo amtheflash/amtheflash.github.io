@@ -4,7 +4,27 @@
 
     
   <url>
-    <loc>http://yoursite.com/2017/11/27/Markdown/</loc>
+    <loc>http://wucb.top/2017/11/29/maven%E7%A6%BB%E7%BA%BF/</loc>
+    <lastmod>2017-11-30T08:30:57.942Z</lastmod>
+    <data>
+        <display>
+        <title>maven离线使用，本地明明有却提示找不到jar</title>
+        <pubTime>2017-11-29T03:19:55.000Z</pubTime>
+        
+        <tag>maven，疑难杂症</tag>
+         
+         
+           
+             
+              <breadCrumb title="maven" url="http://wucb.top/categories/maven/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wucb.top/2017/11/27/Markdown/</loc>
     <lastmod>2017-11-27T07:58:46.025Z</lastmod>
     <data>
         <display>
@@ -18,7 +38,7 @@
          
            
              
-              <breadCrumb title="Markdown" url="http://yoursite.com/categories/Markdown/"/>
+              <breadCrumb title="Markdown" url="http://wucb.top/categories/Markdown/"/>
           
         </display>
     </data>
@@ -31,7 +51,7 @@
     
     
   <url>
-    <loc>http://yoursite.com/2017/11/24/hello-world%20-%20%E5%89%AF%E6%9C%AC/</loc>
+    <loc>http://wucb.top/2017/11/24/hello-world%20-%20%E5%89%AF%E6%9C%AC/</loc>
     <lastmod>2017-11-23T03:12:52.338Z</lastmod>
     <data>
         <display>
@@ -41,7 +61,7 @@
          
            
              
-              <breadCrumb title="Hexo教程" url="http://yoursite.com/categories/Hexo%E6%95%99%E7%A8%8B/"/>
+              <breadCrumb title="Hexo教程" url="http://wucb.top/categories/Hexo%E6%95%99%E7%A8%8B/"/>
           
         </display>
     </data>
