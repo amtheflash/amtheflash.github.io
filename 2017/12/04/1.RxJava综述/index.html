@@ -16,16 +16,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>标签: markdown分类 | Wuuu</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Wuuu">
-<meta property="og:url" content="http://wucb.top/tags/markdown分类/index.html">
+  <title>1.RxJava综述 | Wuuu</title>
+  <meta name="description" content="写在前面 文档：rxjava中文文档  Git：ReactiveX/RxJavaRx是什么来看看官方的解释rx：ReactiveX微软给的定义是，Rx是一个函数库，让开发者可以利用可观察序列和LINQ风格查询操作符来编写异步和基于事件的程序，使用Rx，开发者可以用Observables表示异步数据流，用LINQ操作符查询异步数据流， 用Schedulers参数化异步数据流的并发处理，Rx可以这样定">
+<meta name="keywords" content="RxJava,异步编程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1.RxJava综述">
+<meta property="og:url" content="http://wucb.top/2017/12/04/1.RxJava综述/index.html">
 <meta property="og:site_name" content="Wuuu">
+<meta property="og:description" content="写在前面 文档：rxjava中文文档  Git：ReactiveX/RxJavaRx是什么来看看官方的解释rx：ReactiveX微软给的定义是，Rx是一个函数库，让开发者可以利用可观察序列和LINQ风格查询操作符来编写异步和基于事件的程序，使用Rx，开发者可以用Observables表示异步数据流，用LINQ操作符查询异步数据流， 用Schedulers参数化异步数据流的并发处理，Rx可以这样定">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-12-08T00:08:44.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Wuuu">
+<meta name="twitter:title" content="1.RxJava综述">
+<meta name="twitter:description" content="写在前面 文档：rxjava中文文档  Git：ReactiveX/RxJavaRx是什么来看看官方的解释rx：ReactiveX微软给的定义是，Rx是一个函数库，让开发者可以利用可观察序列和LINQ风格查询操作符来编写异步和基于事件的程序，使用Rx，开发者可以用Observables表示异步数据流，用LINQ操作符查询异步数据流， 用Schedulers参数化异步数据流的并发处理，Rx可以这样定">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://wucb.top/tags/markdown分类/index.html">
+  <link rel="canonical" href="http://wucb.top/2017/12/04/1.RxJava综述/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Wuuu" type="application/atom+xml">
   
@@ -339,49 +344,159 @@
 
   
   
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <nav id="toc" class="article-toc">
+      <h3 class="toc-title">文章目录</h3>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#写在前面"><span class="toc-number">1.</span> <span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git：ReactiveX-RxJava"><span class="toc-number">2.</span> <span class="toc-text"> Git：ReactiveX/RxJava</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Rx是什么"><span class="toc-number">3.</span> <span class="toc-text">Rx是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RxJava是什么"><span class="toc-number">4.</span> <span class="toc-text">RxJava是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Rxjava有什么用"><span class="toc-number">5.</span> <span class="toc-text">Rxjava有什么用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么要使用Rxjava"><span class="toc-number">6.</span> <span class="toc-text">为什么要使用Rxjava</span></a></li></ol>
+    </nav>
+  </div>
+</aside>
+
 <main class="main" role="main">
-  	<article class="content article article-archives article-type-list" itemscope="">
-	    <header class="article-header">
-	      <h1 itemprop="title"></h1>
-	      <p class="text-muted">共 1 篇文章</p>
-	    </header>
-	    <div class="article-body">
-	      
-  
-  
+  <div class="content">
+  <article id="post-1.RxJava综述" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
-    
+    <div class="article-header">
       
+        
+  
+    <h1 class="article-title" itemprop="name">
+      1.RxJava综述
+    </h1>
+  
+
       
-      <section class="panel panel-default b-no">
-        <div class="panel-heading" role="tab">
-          <h3 class="panel-title">
-            <a data-toggle="collapse" href="#collapse2017" aria-expanded="true">
-              <i class="fa fa-calendar-plus-o text-active"></i><i class="fa fa-calendar-minus-o text"></i>
-              2017
-            </a>
-            <!-- <a href="/archives/2017" class="archive-year">2017</a> -->
-          </h3>
-        </div>
-        <div id="collapse2017" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2017">
-        <div class="panel-body">
-          <div class="collection">
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="fa fa-calendar-check-o"></i>
+	<a href="/2017/12/04/1.RxJava综述/" class="article-date">
+	  <time datetime="2017-12-04T05:27:02.000Z" itemprop="datePublished">2017-12-04</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="fa fa-folder"></i>
+    <a class="article-category-link" href="/categories/RxJava/">RxJava</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="fa fa-tag"></i>
+	<a class="article-tag-link" href="/tags/RxJava/">RxJava</a>, <a class="article-tag-link" href="/tags/异步编程/">异步编程</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="fa fa-eye" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="fa fa-commenting-o"></i> <a href="/2017/12/04/1.RxJava综述/#comments" class="article-comment-link">评论</a></span>
+        
+      </div>
+      
+      <div class="toggle-toc hidden-xs" data-stick-top>
+        <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="文章目录" role="button">
+          <i class="text-collapsed fa fa-anchor"></i>
+          <i class="text-in fa fa-close"></i>
+        </a>
+      </div>
+      
+    </div>
+    <div class="article-entry markdown-body" itemprop="articleBody">
+      
+        <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p> 文档：<a href="https://mcxiaoke.gitbooks.io/rxdocs/content/" target="_blank" rel="external">rxjava中文文档</a></p>
+<h2 id="Git：ReactiveX-RxJava"><a href="#Git：ReactiveX-RxJava" class="headerlink" title=" Git：ReactiveX/RxJava"></a> Git：<a href="https://github.com/ReactiveX/RxJava" target="_blank" rel="external">ReactiveX/RxJava</a></h2><h2 id="Rx是什么"><a href="#Rx是什么" class="headerlink" title="Rx是什么"></a>Rx是什么</h2><p>来看看官方的解释<br>rx：ReactiveX<br>微软给的定义是，Rx是一个函数库，让开发者可以利用可观察序列和LINQ风格查询操作符来编写异步和基于事件的程序，使用Rx，开发者可以用Observables表示异步数据流，用LINQ操作符查询异步数据流， 用Schedulers参数化异步数据流的并发处理，Rx可以这样定义：Rx = Observables + LINQ + Schedulers。</p>
+<h2 id="RxJava是什么"><a href="#RxJava是什么" class="headerlink" title="RxJava是什么"></a>RxJava是什么</h2><p>RxJava就是一种用Java语言实现的响应式编程，来创建基于事件的异步程序<br>一个在 Java VM 上使用可观测的序列来组成异步的、基于事件的程序的库<br><strong>关键词</strong>：<code>异步</code> <code>响应式编程</code> <code>基于事件</code> </p>
+<h2 id="Rxjava有什么用"><a href="#Rxjava有什么用" class="headerlink" title="Rxjava有什么用"></a>Rxjava有什么用</h2><p>大白话：实现异步调用，少写代码，方便数据操作</p>
+<h2 id="为什么要使用Rxjava"><a href="#为什么要使用Rxjava" class="headerlink" title="为什么要使用Rxjava"></a>为什么要使用Rxjava</h2><p>你的项目需要异步调用我觉得这个最关键的，异步和熔断</p>
+<hr>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="http://wucb.top/2017/12/04/1.RxJava综述/" title="1.RxJava综述" target="_blank" rel="external">http://wucb.top/2017/12/04/1.RxJava综述/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/wucb" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/s.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/wucb" target="_blank"><span class="text-dark">Wuuu</span><small class="ml-1x">java Developer &amp; Designer</small></a></h3>
+        <div>朝辞白帝彩云间，千里江陵一日还。 两岸猿声啼不住，轻舟已过万重山。</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+       
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zMTk1OS84NTIz">
+  <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+      
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2017/12/05/2.RxJava概念/" title="2.RxJava概念"><i class="fa fa-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;上一篇</a>
+    </li>
     
     
-<a href="/2017/11/27/Markdown/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2017-11-27T06:03:44.000Z" itemprop="datePublished">2017-11-27</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> Markdown的扩展格式
-</a>
-
-
+    <li class="next">
+      <a href="/2017/11/29/maven离线/" title="maven离线使用，本地明明有却提示找不到jar">下一篇&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+  </ul>
   
   
-    </div></div></div></section>
+  
+  <div class="bar-right">
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+  </div>
+  
+  </div>
+</nav>
   
 
-	    </div>
-  	</article>
-  	 	
+
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -448,6 +563,24 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
     
+    
+        
+    
+<script defer type="text/javascript">
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+
     
     
 

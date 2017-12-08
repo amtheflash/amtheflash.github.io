@@ -16,16 +16,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>标签: markdown分类 | Wuuu</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Wuuu">
-<meta property="og:url" content="http://wucb.top/tags/markdown分类/index.html">
+  <title>3.RxJava功能大全(转) | Wuuu</title>
+  <meta name="description" content="ReactiveX 都有哪些操作呢请看 原文地址可以快速略过，反正也记不住，用的时候查一次，大概开一下了解一下都有说明功能 创建操作用于创建Observable的操作符 变换操作这些操作符可用于对Observable发射的数据进行变换 过滤操作这些操作符用于从Observable发射的数据中进行选择 组合操作组合操作符用于将多个Observable组合成一个单一的Observable 错误处理这些">
+<meta name="keywords" content="RxJava,异步编程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="3.RxJava功能大全(转)">
+<meta property="og:url" content="http://wucb.top/2017/12/06/3.RxJava功能大全(转)/index.html">
 <meta property="og:site_name" content="Wuuu">
+<meta property="og:description" content="ReactiveX 都有哪些操作呢请看 原文地址可以快速略过，反正也记不住，用的时候查一次，大概开一下了解一下都有说明功能 创建操作用于创建Observable的操作符 变换操作这些操作符可用于对Observable发射的数据进行变换 过滤操作这些操作符用于从Observable发射的数据中进行选择 组合操作组合操作符用于将多个Observable组合成一个单一的Observable 错误处理这些">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-12-08T00:08:44.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Wuuu">
+<meta name="twitter:title" content="3.RxJava功能大全(转)">
+<meta name="twitter:description" content="ReactiveX 都有哪些操作呢请看 原文地址可以快速略过，反正也记不住，用的时候查一次，大概开一下了解一下都有说明功能 创建操作用于创建Observable的操作符 变换操作这些操作符可用于对Observable发射的数据进行变换 过滤操作这些操作符用于从Observable发射的数据中进行选择 组合操作组合操作符用于将多个Observable组合成一个单一的Observable 错误处理这些">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://wucb.top/tags/markdown分类/index.html">
+  <link rel="canonical" href="http://wucb.top/2017/12/06/3.RxJava功能大全(转)/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Wuuu" type="application/atom+xml">
   
@@ -339,49 +344,167 @@
 
   
   
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <nav id="toc" class="article-toc">
+      <h3 class="toc-title">文章目录</h3>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建操作"><span class="toc-number">1.</span> <span class="toc-text">创建操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变换操作"><span class="toc-number">2.</span> <span class="toc-text">变换操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#过滤操作"><span class="toc-number">3.</span> <span class="toc-text">过滤操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#组合操作"><span class="toc-number">4.</span> <span class="toc-text">组合操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#错误处理"><span class="toc-number">5.</span> <span class="toc-text">错误处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#辅助操作"><span class="toc-number">6.</span> <span class="toc-text">辅助操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#条件和布尔操作"><span class="toc-number">7.</span> <span class="toc-text">条件和布尔操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#算术和聚合操作"><span class="toc-number">8.</span> <span class="toc-text">算术和聚合操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#连接操作"><span class="toc-number">9.</span> <span class="toc-text">连接操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#转换操作"><span class="toc-number">10.</span> <span class="toc-text">转换操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#操作符决策树"><span class="toc-number">11.</span> <span class="toc-text">操作符决策树</span></a></li></ol>
+    </nav>
+  </div>
+</aside>
+
 <main class="main" role="main">
-  	<article class="content article article-archives article-type-list" itemscope="">
-	    <header class="article-header">
-	      <h1 itemprop="title"></h1>
-	      <p class="text-muted">共 1 篇文章</p>
-	    </header>
-	    <div class="article-body">
-	      
-  
-  
+  <div class="content">
+  <article id="post-3.RxJava功能大全(转)" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
-    
+    <div class="article-header">
       
+        
+  
+    <h1 class="article-title" itemprop="name">
+      3.RxJava功能大全(转)
+    </h1>
+  
+
       
-      <section class="panel panel-default b-no">
-        <div class="panel-heading" role="tab">
-          <h3 class="panel-title">
-            <a data-toggle="collapse" href="#collapse2017" aria-expanded="true">
-              <i class="fa fa-calendar-plus-o text-active"></i><i class="fa fa-calendar-minus-o text"></i>
-              2017
-            </a>
-            <!-- <a href="/archives/2017" class="archive-year">2017</a> -->
-          </h3>
-        </div>
-        <div id="collapse2017" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2017">
-        <div class="panel-body">
-          <div class="collection">
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="fa fa-calendar-check-o"></i>
+	<a href="/2017/12/06/3.RxJava功能大全(转)/" class="article-date">
+	  <time datetime="2017-12-06T02:54:47.000Z" itemprop="datePublished">2017-12-06</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="fa fa-folder"></i>
+    <a class="article-category-link" href="/categories/RxJava/">RxJava</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="fa fa-tag"></i>
+	<a class="article-tag-link" href="/tags/RxJava/">RxJava</a>, <a class="article-tag-link" href="/tags/异步编程/">异步编程</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="fa fa-eye" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="fa fa-commenting-o"></i> <a href="/2017/12/06/3.RxJava功能大全(转)/#comments" class="article-comment-link">评论</a></span>
+        
+      </div>
+      
+      <div class="toggle-toc hidden-xs" data-stick-top>
+        <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="文章目录" role="button">
+          <i class="text-collapsed fa fa-anchor"></i>
+          <i class="text-in fa fa-close"></i>
+        </a>
+      </div>
+      
+    </div>
+    <div class="article-entry markdown-body" itemprop="articleBody">
+      
+        <p>ReactiveX 都有哪些操作呢请看 <a href="https://mcxiaoke.gitbooks.io/rxdocs/content/Operators.html" target="_blank" rel="external"><strong>原文地址</strong></a><br>可以快速略过，反正也记不住，用的时候查一次，大概开一下了解一下都有说明功能</p>
+<h3 id="创建操作"><a href="#创建操作" class="headerlink" title="创建操作"></a>创建操作</h3><p>用于创建Observable的操作符</p>
+<h3 id="变换操作"><a href="#变换操作" class="headerlink" title="变换操作"></a>变换操作</h3><p>这些操作符可用于对Observable发射的数据进行变换</p>
+<h3 id="过滤操作"><a href="#过滤操作" class="headerlink" title="过滤操作"></a>过滤操作</h3><p>这些操作符用于从Observable发射的数据中进行选择</p>
+<h3 id="组合操作"><a href="#组合操作" class="headerlink" title="组合操作"></a>组合操作</h3><p>组合操作符用于将多个Observable组合成一个单一的Observable</p>
+<h3 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h3><p>这些操作符用于从错误通知中恢复</p>
+<h3 id="辅助操作"><a href="#辅助操作" class="headerlink" title="辅助操作"></a>辅助操作</h3><p>一组用于处理Observable的操作符</p>
+<h3 id="条件和布尔操作"><a href="#条件和布尔操作" class="headerlink" title="条件和布尔操作"></a>条件和布尔操作</h3><p>这些操作符可用于单个或多个数据项，也可用于Observable</p>
+<h3 id="算术和聚合操作"><a href="#算术和聚合操作" class="headerlink" title="算术和聚合操作"></a>算术和聚合操作</h3><p>这些操作符可用于整个数据序列</p>
+<h3 id="连接操作"><a href="#连接操作" class="headerlink" title="连接操作"></a>连接操作</h3><p>一些有精确可控的订阅行为的特殊Observable</p>
+<h3 id="转换操作"><a href="#转换操作" class="headerlink" title="转换操作"></a>转换操作</h3><p>To — 将Observable转换为其它的对象或数据结构<br>Blocking 阻塞Observable的操作符</p>
+<h3 id="操作符决策树"><a href="#操作符决策树" class="headerlink" title="操作符决策树"></a>操作符决策树</h3><p>几种主要的需求</p>
+<p>直接创建一个Observable（创建操作）<br>组合多个Observable（组合操作）<br>对Observable发射的数据执行变换操作（变换操作）<br>从Observable发射的数据中取特定的值（过滤操作）<br>转发Observable的部分值（条件/布尔/过滤操作）<br>对Observable发射的数据序列求值（算术/聚合操作）</p>
+<hr>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="http://wucb.top/2017/12/06/3.RxJava功能大全(转)/" title="3.RxJava功能大全(转)" target="_blank" rel="external">http://wucb.top/2017/12/06/3.RxJava功能大全(转)/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/wucb" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/s.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/wucb" target="_blank"><span class="text-dark">Wuuu</span><small class="ml-1x">java Developer &amp; Designer</small></a></h3>
+        <div>朝辞白帝彩云间，千里江陵一日还。 两岸猿声啼不住，轻舟已过万重山。</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+       
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zMTk1OS84NTIz">
+  <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+      
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2017/12/06/5.RxJava线程控制Scheduler/" title="5.RxJava线程控制Scheduler"><i class="fa fa-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;上一篇</a>
+    </li>
     
     
-<a href="/2017/11/27/Markdown/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2017-11-27T06:03:44.000Z" itemprop="datePublished">2017-11-27</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> Markdown的扩展格式
-</a>
-
-
+    <li class="next">
+      <a href="/2017/12/05/4.RxJava第一个实例/" title="4.RxJava第一个实例">下一篇&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+  </ul>
   
   
-    </div></div></div></section>
+  
+  <div class="bar-right">
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+  </div>
+  
+  </div>
+</nav>
   
 
-	    </div>
-  	</article>
-  	 	
+
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -448,6 +571,24 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
     
+    
+        
+    
+<script defer type="text/javascript">
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+
     
     
 

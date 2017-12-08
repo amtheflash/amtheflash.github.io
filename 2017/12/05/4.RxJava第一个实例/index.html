@@ -16,17 +16,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>404 Not Found：该页无法显示 | Wuuu</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="404 Not Found：该页无法显示">
-<meta property="og:url" content="http://wucb.top/404.html">
+  <title>4.RxJava第一个实例 | Wuuu</title>
+  <meta name="description" content="前言： 还是基于考生和监考老师的例子，对RxJava中的几个概念进行理解 maven依赖12345&amp;lt;dependency&amp;gt;  &amp;lt;groupId&amp;gt;io.reactivex&amp;lt;/groupId&amp;gt;  &amp;lt;artifactId&amp;gt;rxjava&amp;lt;/artifactId&amp;gt;  &amp;lt;version&amp;gt;1.0.10&amp;lt;/version&amp;gt;&amp;lt;">
+<meta name="keywords" content="RxJava,异步编程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="4.RxJava第一个实例">
+<meta property="og:url" content="http://wucb.top/2017/12/05/4.RxJava第一个实例/index.html">
 <meta property="og:site_name" content="Wuuu">
+<meta property="og:description" content="前言： 还是基于考生和监考老师的例子，对RxJava中的几个概念进行理解 maven依赖12345&amp;lt;dependency&amp;gt;  &amp;lt;groupId&amp;gt;io.reactivex&amp;lt;/groupId&amp;gt;  &amp;lt;artifactId&amp;gt;rxjava&amp;lt;/artifactId&amp;gt;  &amp;lt;version&amp;gt;1.0.10&amp;lt;/version&amp;gt;&amp;lt;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-11-23T03:12:52.332Z">
+<meta property="og:updated_time" content="2017-12-08T00:08:44.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="404 Not Found：该页无法显示">
+<meta name="twitter:title" content="4.RxJava第一个实例">
+<meta name="twitter:description" content="前言： 还是基于考生和监考老师的例子，对RxJava中的几个概念进行理解 maven依赖12345&amp;lt;dependency&amp;gt;  &amp;lt;groupId&amp;gt;io.reactivex&amp;lt;/groupId&amp;gt;  &amp;lt;artifactId&amp;gt;rxjava&amp;lt;/artifactId&amp;gt;  &amp;lt;version&amp;gt;1.0.10&amp;lt;/version&amp;gt;&amp;lt;">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://wucb.top/404.html">
+  <link rel="canonical" href="http://wucb.top/2017/12/05/4.RxJava第一个实例/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Wuuu" type="application/atom+xml">
   
@@ -340,16 +344,25 @@
 
   
   
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <nav id="toc" class="article-toc">
+      <h3 class="toc-title">文章目录</h3>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言："><span class="toc-number">1.</span> <span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#maven依赖"><span class="toc-number">2.</span> <span class="toc-text">maven依赖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#先有一个考生Observable"><span class="toc-number">3.</span> <span class="toc-text">先有一个考生Observable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#再有一个监考老师Observer"><span class="toc-number">4.</span> <span class="toc-text">再有一个监考老师Observer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#老师进入考场了开始监考subscribe"><span class="toc-number">5.</span> <span class="toc-text">老师进入考场了开始监考subscribe</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有个同学作弊Subject"><span class="toc-number">6.</span> <span class="toc-text">有个同学作弊Subject</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#班主任在外边action0"><span class="toc-number">7.</span> <span class="toc-text">班主任在外边action0</span></a></li></ol>
+    </nav>
+  </div>
+</aside>
+
 <main class="main" role="main">
   <div class="content">
-  <article id="page-undefined" class="article article-type-page" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-4.RxJava第一个实例" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      404 Not Found：该页无法显示
+      4.RxJava第一个实例
     </h1>
   
 
@@ -357,12 +370,22 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="fa fa-calendar-check-o"></i>
-	<a href="/404.html" class="article-date">
-	  <time datetime="2017-11-23T03:26:14.600Z" itemprop="datePublished">2017-11-23</time>
+	<a href="/2017/12/05/4.RxJava第一个实例/" class="article-date">
+	  <time datetime="2017-12-05T02:49:36.000Z" itemprop="datePublished">2017-12-05</time>
 	</a>
 </span>
         
+  <span class="article-category">
+    <i class="fa fa-folder"></i>
+    <a class="article-category-link" href="/categories/RxJava/">RxJava</a>
+  </span>
+
         
+  <span class="article-tag">
+    <i class="fa fa-tag"></i>
+	<a class="article-tag-link" href="/tags/RxJava/">RxJava</a>, <a class="article-tag-link" href="/tags/异步编程/">异步编程</a>
+  </span>
+
 
         
 	<span class="article-read hidden-xs">
@@ -373,14 +396,39 @@
 	</span>
 
 
-        <span class="post-comment"><i class="fa fa-commenting-o"></i> <a href="/404.html#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="fa fa-commenting-o"></i> <a href="/2017/12/05/4.RxJava第一个实例/#comments" class="article-comment-link">评论</a></span>
         
+      </div>
+      
+      <div class="toggle-toc hidden-xs" data-stick-top>
+        <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="文章目录" role="button">
+          <i class="text-collapsed fa fa-anchor"></i>
+          <i class="text-in fa fa-close"></i>
+        </a>
       </div>
       
     </div>
     <div class="article-entry markdown-body" itemprop="articleBody">
       
-        <script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8" homepageurl="http://blog.cofess.com" homepagename="回到我的主页"></script>
+        <h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><hr>
+<p>还是基于考生和监考老师的例子，对RxJava中的几个概念进行理解</p>
+<h3 id="maven依赖"><a href="#maven依赖" class="headerlink" title="maven依赖"></a>maven依赖</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.reactivex<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>rxjava<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="先有一个考生Observable"><a href="#先有一个考生Observable" class="headerlink" title="先有一个考生Observable"></a>先有一个考生Observable</h3><hr>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"> Observable&lt;String&gt;  student = Observable.create(<span class="keyword">new</span> Observable.OnSubscribe&lt;String&gt;() &#123;</span><br><span class="line">	<span class="comment">//subscriber 订阅者对象</span></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">call</span><span class="params">(Subscriber&lt;? <span class="keyword">super</span> String&gt; subscriber)</span> </span>&#123;</span><br><span class="line">		subscriber.onNext(<span class="string">"我要交卷"</span>); <span class="comment">//发射一个"我要交卷"的String（调用订阅者对象方法）</span></span><br><span class="line">		subscriber.onCompleted();<span class="comment">//发射完成，必须写这个，不写发布出去</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>上面代码就是说创建了一个发射源，并且发出了一个字符串。这个创建发射数据源的方式有很多</p>
+<h3 id="再有一个监考老师Observer"><a href="#再有一个监考老师Observer" class="headerlink" title="再有一个监考老师Observer"></a>再有一个监考老师Observer</h3><hr>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Observer&lt;String&gt; teach = <span class="keyword">new</span> Observer&lt;String&gt;() &#123;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCompleted</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"收到你的试卷了"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onError</span><span class="params">(Throwable e)</span> </span>&#123; &#125;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onNext</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"收到请求"</span>+s);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>上面代码就是创建了一个接收源，重写的几个方法<code>onCompleted(当接收完了)</code> <code>onError（当错误）</code> <code>onNext（当收到数据）</code></p>
+<h3 id="老师进入考场了开始监考subscribe"><a href="#老师进入考场了开始监考subscribe" class="headerlink" title="老师进入考场了开始监考subscribe"></a>老师进入考场了开始监考subscribe</h3><hr>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">student.subscribe(teach);</span><br></pre></td></tr></table></figure>
+<p>上面这句就是接收源订阅发送源，也就是老师开始监考学生。</p>
+<h3 id="有个同学作弊Subject"><a href="#有个同学作弊Subject" class="headerlink" title="有个同学作弊Subject"></a>有个同学作弊Subject</h3><hr>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">PublishSubject&lt;String&gt; student2 = PublishSubject.create();</span><br><span class="line">student2.map(string -&gt; <span class="string">"你的答案给我了,我也要交卷了"</span>);</span><br><span class="line">student.subscribe(student2);<span class="comment">//接收student的数据</span></span><br><span class="line">student2.subscribe(teach);<span class="comment">//一样被teach监考</span></span><br></pre></td></tr></table></figure>
+<p>上面代码，Subject既能接收也能发送。</p>
+<h3 id="班主任在外边action0"><a href="#班主任在外边action0" class="headerlink" title="班主任在外边action0"></a>班主任在外边action0</h3><hr>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Action1 headTeacher = <span class="keyword">new</span> Action1() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">call</span><span class="params">(Object o)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"-------------"</span>+o);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">student.subscribe(headTeacher);</span><br></pre></td></tr></table></figure>
+<p>班主任等你交卷了出来有话和你说<br>为啥用Action1而不用Observer呢，班主任只关心你考完了，在考场里的其他动作，她没必要处理</p>
+<hr>
 
       
     </div>
@@ -390,7 +438,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://wucb.top//404.html" title="404 Not Found：该页无法显示" target="_blank" rel="external">http://wucb.top//404.html</a>
+      <a href="http://wucb.top/2017/12/05/4.RxJava第一个实例/" title="4.RxJava第一个实例" target="_blank" rel="external">http://wucb.top/2017/12/05/4.RxJava第一个实例/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -421,12 +469,35 @@
   </article>
   
     
+  <section id="comments">
+  	
+       
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zMTk1OS84NTIz">
+  <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+      
+    
+  </section>
+
 
   
 </div>
 
   <nav class="bar bar-footer clearfix" data-stick-bottom>
   <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2017/12/06/3.RxJava功能大全(转)/" title="3.RxJava功能大全(转)"><i class="fa fa-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;上一篇</a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2017/12/05/2.RxJava概念/" title="2.RxJava概念">下一篇&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+  </ul>
   
   
   
@@ -505,6 +576,24 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
     
+    
+        
+    
+<script defer type="text/javascript">
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+
     
     
 

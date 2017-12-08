@@ -57,6 +57,7 @@ $(function() {
     zindex: 42,
     edgeOffset: 0
   });
+ 
 });
 
 //# sourceMappingURL=application.js.map
