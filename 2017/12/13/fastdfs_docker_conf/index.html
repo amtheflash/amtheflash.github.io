@@ -16,21 +16,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>2.RxJava概念 | Wuuu</title>
-  <meta name="description" content="概念RxJava是Java VM上一个灵活的、使用可观测序列来组成的一个异步的、基于事件的库。上面的这句话觉得不好理解的可以理解异步 观察者 异步 观察者模式从使用的角度来说，可能也只有异步的个点是最强需求了。先列几个RxJava中基本的概念1234561.  Observable（被观察者、发射源） 2.  Observer/Subscriber（观察者、接收源）3.  Subject （可被观">
-<meta name="keywords" content="RxJava,异步编程">
+  <title>FastDFS_Docker安装 | Wuuu</title>
+  <meta name="description" content="在centos7下使用FastDFS的docker镜像 下载fastdfs的docker镜像 下载docker镜像: docker pull season/fastdfs fastdfs配置目录 下载好了一个镜像以后，在宿主机中新建目录用,于存放fastdfs配置文件和数据,名称根据自己需求，如下只是样例，fastdfs在一台服务器支持多个store_path，每个store_path指向一个存储">
+<meta name="keywords" content="FastDFS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2.RxJava概念">
-<meta property="og:url" content="http://wucb.top/2017/12/05/2.RxJava概念/index.html">
+<meta property="og:title" content="FastDFS_Docker安装">
+<meta property="og:url" content="http://wucb.top/2017/12/13/fastdfs_docker_conf/index.html">
 <meta property="og:site_name" content="Wuuu">
-<meta property="og:description" content="概念RxJava是Java VM上一个灵活的、使用可观测序列来组成的一个异步的、基于事件的库。上面的这句话觉得不好理解的可以理解异步 观察者 异步 观察者模式从使用的角度来说，可能也只有异步的个点是最强需求了。先列几个RxJava中基本的概念1234561.  Observable（被观察者、发射源） 2.  Observer/Subscriber（观察者、接收源）3.  Subject （可被观">
+<meta property="og:description" content="在centos7下使用FastDFS的docker镜像 下载fastdfs的docker镜像 下载docker镜像: docker pull season/fastdfs fastdfs配置目录 下载好了一个镜像以后，在宿主机中新建目录用,于存放fastdfs配置文件和数据,名称根据自己需求，如下只是样例，fastdfs在一台服务器支持多个store_path，每个store_path指向一个存储">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-12-08T00:08:44.000Z">
+<meta property="og:updated_time" content="2017-12-15T03:09:15.665Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2.RxJava概念">
-<meta name="twitter:description" content="概念RxJava是Java VM上一个灵活的、使用可观测序列来组成的一个异步的、基于事件的库。上面的这句话觉得不好理解的可以理解异步 观察者 异步 观察者模式从使用的角度来说，可能也只有异步的个点是最强需求了。先列几个RxJava中基本的概念1234561.  Observable（被观察者、发射源） 2.  Observer/Subscriber（观察者、接收源）3.  Subject （可被观">
+<meta name="twitter:title" content="FastDFS_Docker安装">
+<meta name="twitter:description" content="在centos7下使用FastDFS的docker镜像 下载fastdfs的docker镜像 下载docker镜像: docker pull season/fastdfs fastdfs配置目录 下载好了一个镜像以后，在宿主机中新建目录用,于存放fastdfs配置文件和数据,名称根据自己需求，如下只是样例，fastdfs在一台服务器支持多个store_path，每个store_path指向一个存储">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://wucb.top/2017/12/05/2.RxJava概念/index.html">
+  <link rel="canonical" href="http://wucb.top/2017/12/13/fastdfs_docker_conf/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Wuuu" type="application/atom+xml">
   
@@ -348,21 +348,21 @@
   <div class="slimContent">
     <nav id="toc" class="article-toc">
       <h3 class="toc-title">文章目录</h3>
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#概念"><span class="toc-number">1.</span> <span class="toc-text">概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#异步-观察者模式"><span class="toc-number">2.</span> <span class="toc-text">异步 观察者模式</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#下载fastdfs的docker镜像"><span class="toc-number">1.</span> <span class="toc-text">下载fastdfs的docker镜像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#fastdfs配置目录"><span class="toc-number">2.</span> <span class="toc-text">fastdfs配置目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取配置文件"><span class="toc-number">3.</span> <span class="toc-text">获取配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改配置文件"><span class="toc-number">4.</span> <span class="toc-text">修改配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#启动容器"><span class="toc-number">5.</span> <span class="toc-text">启动容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#启动测试"><span class="toc-number">6.</span> <span class="toc-text">启动测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#添加开放端口"><span class="toc-number">7.</span> <span class="toc-text">添加开放端口</span></a></li></ol>
     </nav>
   </div>
 </aside>
 
 <main class="main" role="main">
   <div class="content">
-  <article id="post-2.RxJava概念" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-fastdfs_docker_conf" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      2.RxJava概念
+      FastDFS_Docker安装
     </h1>
   
 
@@ -370,20 +370,20 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="fa fa-calendar-check-o"></i>
-	<a href="/2017/12/05/2.RxJava概念/" class="article-date">
-	  <time datetime="2017-12-05T01:54:32.000Z" itemprop="datePublished">2017-12-05</time>
+	<a href="/2017/12/13/fastdfs_docker_conf/" class="article-date">
+	  <time datetime="2017-12-13T03:10:34.000Z" itemprop="datePublished">2017-12-13</time>
 	</a>
 </span>
         
   <span class="article-category">
     <i class="fa fa-folder"></i>
-    <a class="article-category-link" href="/categories/RxJava/">RxJava</a>
+    <a class="article-category-link" href="/categories/FastDFS/">FastDFS</a>
   </span>
 
         
   <span class="article-tag">
     <i class="fa fa-tag"></i>
-	<a class="article-tag-link" href="/tags/RxJava/">RxJava</a>, <a class="article-tag-link" href="/tags/异步编程/">异步编程</a>
+	<a class="article-tag-link" href="/tags/FastDFS/">FastDFS</a>
   </span>
 
 
@@ -396,7 +396,7 @@
 	</span>
 
 
-        <span class="post-comment"><i class="fa fa-commenting-o"></i> <a href="/2017/12/05/2.RxJava概念/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="fa fa-commenting-o"></i> <a href="/2017/12/13/fastdfs_docker_conf/#comments" class="article-comment-link">评论</a></span>
         
       </div>
       
@@ -410,9 +410,40 @@
     </div>
     <div class="article-entry markdown-body" itemprop="articleBody">
       
-        <h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>RxJava是Java VM上一个灵活的、使用可观测序列来组成的一个异步的、基于事件的库。<br>上面的这句话觉得不好理解的可以理解<code>异步</code> <code>观察者</code></p>
-<h3 id="异步-观察者模式"><a href="#异步-观察者模式" class="headerlink" title="异步 观察者模式"></a>异步 观察者模式</h3><p>从使用的角度来说，可能也只有异步的个点是最强需求了。<br>先列几个RxJava中基本的概念<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>  Observable（被观察者、发射源） </span><br><span class="line"><span class="number">2.</span>  Observer/Subscriber（观察者、接收源）</span><br><span class="line"><span class="number">3.</span>  Subject （可被观察也可观察别人、既可充当发射源，也可充当接收源）</span><br><span class="line"><span class="number">4.</span>  Subscriber（订阅者、观察者对象）</span><br><span class="line"><span class="number">3.</span>  Action0 （RxJava中的一个接口，只有一个call方法，没有返回值)</span><br><span class="line"><span class="number">4.</span>  Func0（与Action0相似， 有返回值）</span><br></pre></td></tr></table></figure></p>
-<p>举个例子：<br>你在考场考试，监考官在观察你（也就是订阅了）有没有作弊、喧哗或要交卷了。<br>那么这个是时候呢<br><code>Observable</code>也就是你，是一个被观察者<br><code>Observer/Subscriber</code> 也就是监考官就是在观察你。<br><code>Observable</code>发出一个数据。也就是你交卷了。<br><code>Observer/Subscriber</code> 就会受到数据（你交的试卷）</p>
+        <p>在centos7下使用FastDFS的docker镜像</p>
+<h3 id="下载fastdfs的docker镜像"><a href="#下载fastdfs的docker镜像" class="headerlink" title="下载fastdfs的docker镜像"></a>下载fastdfs的docker镜像</h3><hr>
+<p><a href="https://hub.docker.com/r/season/fastdfs/" target="_blank" rel="external">下载docker镜像</a>: <code>docker pull season/fastdfs</code></p>
+<h3 id="fastdfs配置目录"><a href="#fastdfs配置目录" class="headerlink" title="fastdfs配置目录"></a>fastdfs配置目录</h3><hr>
+<p>下载好了一个镜像以后，在宿主机中新建目录用,于存放fastdfs配置文件和数据,名称根据自己需求，如下只是样例，fastdfs在一台服务器支持多个store_path，每个store_path指向一个存储路径<br><code>etc(配置文件地址)</code> <code>storage_data(存储数据地址)</code>，<code>storage_data(存储数据地址)</code> <code>store_path(扩容)</code><br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mkdir /usr/local/fastdfs/etc/ </span><br><span class="line">mkdir /usr/local/fastdfs/data/storage_data</span><br><span class="line">mkdir /usr/local/fastdfs/data/store_path</span><br><span class="line">mkdir /usr/local/fastdfs/data/tracker_data</span><br></pre></td></tr></table></figure></p>
+<h3 id="获取配置文件"><a href="#获取配置文件" class="headerlink" title="获取配置文件"></a>获取配置文件</h3><hr>
+<p>启动一个fastdfs的docker容器，查看容器id，从容器中下载配置文件并且下载到上面创建的 <code>/usr/local/fastdfs/etc/</code> 目录中.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker run -ti --name fdfs_sh --net=host season/fastdfs  </span><br><span class="line">docker ps -a   </span><br><span class="line">docker cp 64a047547732:/fdfs_conf/client.conf  /usr/local/fastdfs/etc/client.conf  </span><br><span class="line">docker cp 64a047547732:/fdfs_conf/storage.conf  /usr/local/fastdfs/etc/storage.conf  </span><br><span class="line">docker cp 64a047547732:/fdfs_conf/tracker.conf  /usr/local/fastdfs/etc/tracker.conf</span><br></pre></td></tr></table></figure>
+<h3 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h3><hr>
+<p> 主要修改的是文件存储目录和跟踪服务器地址，<code>tracker_server</code> 根据自己机器的地址进行配置<br> tracker.conf 主要修改如下几行</p>
+<blockquote>
+<p>base_path=/fastdfs/storage<br>store_path0=/fastdfs/storage/<br>tracker_server=192.168.1.214:22122</p>
+</blockquote>
+<p> tracker.conf 主要修改如下几行</p>
+<blockquote>
+<p>tracker_server=192.168.1.214:22122</p>
+</blockquote>
+<p> client.conf修改如下几行</p>
+<blockquote>
+<p>tracker_server=192.168.1.214:22122</p>
+</blockquote>
+<h3 id="启动容器"><a href="#启动容器" class="headerlink" title="启动容器"></a>启动容器</h3><hr>
+<p>启动容器脚本,先启动一个tracker 然后再启动一个storage，<code>-v</code> 后面跟的目录映射，<code>TRACKER_SERVER</code> 地址根据自己机器的地址进行配置,<code>--privileged=true</code> 主要是解决目录权限<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">docker run -tid --name  trakcer \</span><br><span class="line">        -v /usr/local/fastdfs/data/tracker_data/data:/fastdfs/tracker/data \</span><br><span class="line">        -v /usr/local/fastdfs/etc:/fdfs_conf \</span><br><span class="line">        --privileged=true \</span><br><span class="line">        --net=host  season/fastdfs tracker</span><br><span class="line"></span><br><span class="line">docker run -tid --name storage \</span><br><span class="line">        -v /usr/local/fastdfs/data/storage_data/data:/fastdfs/storage/data \</span><br><span class="line">        -v /usr/local/fastdfs/data/store_path:/fastdfs/store_path \</span><br><span class="line">        -v /usr/local/fastdfs/etc:/fdfs_conf \</span><br><span class="line">        --privileged=true \</span><br><span class="line">        --net=host -e TRACKER_SERVER:192.168.1.214:22122 \</span><br><span class="line">        season/fastdfs storage</span><br></pre></td></tr></table></figure></p>
+<p>执行完上面的脚本会启动两个容器，使用<code>docker ps</code>可以进行查看,如果没有启动成功可以使用<code>docker logs 容器id</code> 查看日志</p>
+<h3 id="启动测试"><a href="#启动测试" class="headerlink" title="启动测试"></a>启动测试</h3><hr>
+<p>还是启动一个容器，在容器中进行测试，启动容器会用到<code>client.conf</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">docker run -ti --name fdfs_sh \</span><br><span class="line">        -v /usr/local/fastdfs/etc:/fdfs_conf \</span><br><span class="line">        --privileged=true \</span><br><span class="line">        --net=host season/fastdfs sh</span><br></pre></td></tr></table></figure>
+<p>执行完脚本会自动进入容器，切换到<code>/usr/bin</code>然后执行上传文件。<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/bin</span><br><span class="line">fdfs_test  /fdfs_conf/client.conf upload /fdfs_conf/storage.conf</span><br></pre></td></tr></table></figure></p>
+<p>上传完成后会返回一些信息其中会包含文件地址,可以到宿主机目录进行查看</p>
+<blockquote>
+<p>example file url: <a href="http://192.168.1.214/group1/M00/00/00/wKgB1lozOU-ASzg7AAAgC81RIQ441_big.conf" target="_blank" rel="external">http://192.168.1.214/group1/M00/00/00/wKgB1lozOU-ASzg7AAAgC81RIQ441_big.conf</a></p>
+</blockquote>
+<h3 id="添加开放端口"><a href="#添加开放端口" class="headerlink" title="添加开放端口"></a>添加开放端口</h3><hr>
+<p>添加开放端口，让fastdfs可以供其他程序调用<br>要添加哪些端口可以在fastdfs配置文件中查找。<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=22122/tcp --permanent</span><br><span class="line">firewall-cmd --zone=public --add-port=23000/tcp --permanent</span><br><span class="line">firewall-cmd --zone=public --add-port=8088/tcp --permanent</span><br><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure></p>
 <hr>
 
       
@@ -423,7 +454,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://wucb.top/2017/12/05/2.RxJava概念/" title="2.RxJava概念" target="_blank" rel="external">http://wucb.top/2017/12/05/2.RxJava概念/</a>
+      <a href="http://wucb.top/2017/12/13/fastdfs_docker_conf/" title="FastDFS_Docker安装" target="_blank" rel="external">http://wucb.top/2017/12/13/fastdfs_docker_conf/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -474,12 +505,12 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2017/12/05/4.RxJava第一个实例/" title="4.RxJava第一个实例"><i class="fa fa-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;上一篇</a>
+      <a href="/2017/12/13/fastdfs_java/" title="FastDFS 使用Java上传下载文件"><i class="fa fa-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;上一篇</a>
     </li>
     
     
     <li class="next">
-      <a href="/2017/12/04/1.RxJava综述/" title="1.RxJava综述">下一篇&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      <a href="/2017/12/13/fastdfs_des/" title="FastDFS 简介">下一篇&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
     </li>
     
   </ul>
