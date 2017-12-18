@@ -25,7 +25,7 @@
 <meta property="og:site_name" content="Wuuu">
 <meta property="og:description" content="在centos7下使用FastDFS的docker镜像 下载fastdfs的docker镜像 下载docker镜像: docker pull season/fastdfs fastdfs配置目录 下载好了一个镜像以后，在宿主机中新建目录用,于存放fastdfs配置文件和数据,名称根据自己需求，如下只是样例，fastdfs在一台服务器支持多个store_path，每个store_path指向一个存储">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-12-18T03:22:33.446Z">
+<meta property="og:updated_time" content="2017-12-18T03:24:21.227Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="FastDFS_Docker安装">
 <meta name="twitter:description" content="在centos7下使用FastDFS的docker镜像 下载fastdfs的docker镜像 下载docker镜像: docker pull season/fastdfs fastdfs配置目录 下载好了一个镜像以后，在宿主机中新建目录用,于存放fastdfs配置文件和数据,名称根据自己需求，如下只是样例，fastdfs在一台服务器支持多个store_path，每个store_path指向一个存储">
@@ -417,7 +417,7 @@
 <p>下载好了一个镜像以后，在宿主机中新建目录用,于存放fastdfs配置文件和数据,名称根据自己需求，如下只是样例，fastdfs在一台服务器支持多个store_path，每个store_path指向一个存储路径<br><code>etc(配置文件地址)</code> <code>storage_data(存储数据地址)</code>，<code>storage_data(存储数据地址)</code> <code>store_path(扩容)</code><br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mkdir /usr/local/fastdfs/etc/ </span><br><span class="line">mkdir /usr/local/fastdfs/data/storage_data</span><br><span class="line">mkdir /usr/local/fastdfs/data/store_path</span><br><span class="line">mkdir /usr/local/fastdfs/data/tracker_data</span><br></pre></td></tr></table></figure></p>
 <h3 id="获取配置文件"><a href="#获取配置文件" class="headerlink" title="获取配置文件"></a>获取配置文件</h3><hr>
 <p>启动一个fastdfs的docker容器，查看容器id，从容器中下载配置文件并且下载到上面创建的 <code>/usr/local/fastdfs/etc/</code> 目录中.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker run -ti --name fdfs_sh --net=host season/fastdfs sh</span><br><span class="line">docker ps -a   </span><br><span class="line">docker cp -a 07e7af1fdf74:/fdfs_conf/.  /usr/local/fastdfs/etc/tracker.conf</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker run -ti --name fdfs_sh --net=host season/fastdfs sh</span><br><span class="line">docker ps -a   </span><br><span class="line">docker cp -a 07e7af1fdf74:/fdfs_conf/.  /usr/local/fastdfs/etc</span><br></pre></td></tr></table></figure>
 <h3 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h3><hr>
 <p> 主要修改的是文件存储目录和跟踪服务器地址，<code>tracker_server</code> 根据自己机器的地址进行配置<br> tracker.conf 主要修改如下几行</p>
 <blockquote>
