@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wucb.top/2017/12/13/fastdfs_docker_conf/</loc>
+    
+    <lastmod>2017-12-18T03:11:40.457Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wucb.top/2017/12/15/jmeter_use/</loc>
     
     <lastmod>2017-12-15T09:47:28.060Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://wucb.top/2017/12/13/fastdfs_des/</loc>
     
     <lastmod>2017-12-15T03:09:23.795Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wucb.top/2017/12/13/fastdfs_docker_conf/</loc>
-    
-    <lastmod>2017-12-15T03:09:15.665Z</lastmod>
     
   </url>
   
