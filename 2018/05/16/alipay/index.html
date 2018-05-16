@@ -16,21 +16,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>maven离线使用，本地明明有却提示找不到jar | Wucb</title>
-  <meta name="description" content="有的时候我们的开发环境中没有网络，也没有私服，对就是这样无奈（无语），明明本地maven仓库中有该jar包，却提示没有。不妨尝试如下的操作，可能会产生意想不到的结果哦。 1) 删除maven本地仓库repository中名字为_remote.repositories的所有文件。2) 删除maven本地仓库repository中.lastUpdated为后缀的所有文件。 执行以上两步，刷新你的项目">
-<meta name="keywords" content="maven，疑难杂症">
+  <title>alipay 移动端网页支付 | Wucb</title>
+  <meta name="description" content="最近做的项目，用到了支付，使用alipay 移动端支付，一开始一头雾水，总结一下，其实官方文档已经很详细了 ，本次总结全部基于沙箱测试。 环境 本文假设你已经有账户可以登陆   登陆完成后，进入开放平台-开发者中心-沙箱环境 这个一个测试环境，里面有一个默认app ，在沙箱账号菜单还有测试用的买家账号和余额。 配置公钥私钥，在沙箱环境中配置好应用公钥。 在项目中引入依赖12345&amp;lt;depe">
+<meta name="keywords" content="alipay，支付">
 <meta property="og:type" content="article">
-<meta property="og:title" content="maven离线使用，本地明明有却提示找不到jar">
-<meta property="og:url" content="http://wucb.top/2017/11/29/maven离线/index.html">
+<meta property="og:title" content="alipay 移动端网页支付">
+<meta property="og:url" content="http://wucb.top/2018/05/16/alipay/index.html">
 <meta property="og:site_name" content="wucb">
-<meta property="og:description" content="有的时候我们的开发环境中没有网络，也没有私服，对就是这样无奈（无语），明明本地maven仓库中有该jar包，却提示没有。不妨尝试如下的操作，可能会产生意想不到的结果哦。 1) 删除maven本地仓库repository中名字为_remote.repositories的所有文件。2) 删除maven本地仓库repository中.lastUpdated为后缀的所有文件。 执行以上两步，刷新你的项目">
+<meta property="og:description" content="最近做的项目，用到了支付，使用alipay 移动端支付，一开始一头雾水，总结一下，其实官方文档已经很详细了 ，本次总结全部基于沙箱测试。 环境 本文假设你已经有账户可以登陆   登陆完成后，进入开放平台-开发者中心-沙箱环境 这个一个测试环境，里面有一个默认app ，在沙箱账号菜单还有测试用的买家账号和余额。 配置公钥私钥，在沙箱环境中配置好应用公钥。 在项目中引入依赖12345&amp;lt;depe">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-11-30T08:30:57.942Z">
+<meta property="og:updated_time" content="2018-05-16T10:32:16.338Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="maven离线使用，本地明明有却提示找不到jar">
-<meta name="twitter:description" content="有的时候我们的开发环境中没有网络，也没有私服，对就是这样无奈（无语），明明本地maven仓库中有该jar包，却提示没有。不妨尝试如下的操作，可能会产生意想不到的结果哦。 1) 删除maven本地仓库repository中名字为_remote.repositories的所有文件。2) 删除maven本地仓库repository中.lastUpdated为后缀的所有文件。 执行以上两步，刷新你的项目">
+<meta name="twitter:title" content="alipay 移动端网页支付">
+<meta name="twitter:description" content="最近做的项目，用到了支付，使用alipay 移动端支付，一开始一头雾水，总结一下，其实官方文档已经很详细了 ，本次总结全部基于沙箱测试。 环境 本文假设你已经有账户可以登陆   登陆完成后，进入开放平台-开发者中心-沙箱环境 这个一个测试环境，里面有一个默认app ，在沙箱账号菜单还有测试用的买家账号和余额。 配置公钥私钥，在沙箱环境中配置好应用公钥。 在项目中引入依赖12345&amp;lt;depe">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://wucb.top/2017/11/29/maven离线/index.html">
+  <link rel="canonical" href="http://wucb.top/2018/05/16/alipay/index.html">
   
     <link rel="alternate" href="/atom.xml" title="wucb" type="application/atom+xml">
   
@@ -348,21 +348,21 @@
   <div class="slimContent">
     <nav id="toc" class="article-toc">
       <h3 class="toc-title">文章目录</h3>
-      
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#环境"><span class="toc-number">1.</span> <span class="toc-text">环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开发"><span class="toc-number">2.</span> <span class="toc-text">开发</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#支付流程说明："><span class="toc-number">2.1.</span> <span class="toc-text">支付流程说明：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#开发-官方实例"><span class="toc-number">2.2.</span> <span class="toc-text">开发(官方实例)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#调用支付宝生成订单"><span class="toc-number">2.2.1.</span> <span class="toc-text">调用支付宝生成订单</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#接收支付宝回传的支付结果"><span class="toc-number">2.2.2.</span> <span class="toc-text">接收支付宝回传的支付结果</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#遇到的问题"><span class="toc-number">2.3.</span> <span class="toc-text">遇到的问题</span></a></li></ol></li></ol>
     </nav>
   </div>
 </aside>
 
 <main class="main" role="main">
   <div class="content">
-  <article id="post-maven离线" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-alipay" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      maven离线使用，本地明明有却提示找不到jar
+      alipay 移动端网页支付
     </h1>
   
 
@@ -370,20 +370,20 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="fa fa-calendar-check-o"></i>
-	<a href="/2017/11/29/maven离线/" class="article-date">
-	  <time datetime="2017-11-29T03:19:55.000Z" itemprop="datePublished">2017-11-29</time>
+	<a href="/2018/05/16/alipay/" class="article-date">
+	  <time datetime="2018-05-16T07:43:16.000Z" itemprop="datePublished">2018-05-16</time>
 	</a>
 </span>
         
   <span class="article-category">
     <i class="fa fa-folder"></i>
-    <a class="article-category-link" href="/categories/maven/">maven</a>
+    <a class="article-category-link" href="/categories/支付/">支付</a>
   </span>
 
         
   <span class="article-tag">
     <i class="fa fa-tag"></i>
-	<a class="article-tag-link" href="/tags/maven，疑难杂症/">maven，疑难杂症</a>
+	<a class="article-tag-link" href="/tags/alipay，支付/">alipay，支付</a>
   </span>
 
 
@@ -396,7 +396,7 @@
 	</span>
 
 
-        <span class="post-comment"><i class="fa fa-commenting-o"></i> <a href="/2017/11/29/maven离线/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="fa fa-commenting-o"></i> <a href="/2018/05/16/alipay/#comments" class="article-comment-link">评论</a></span>
         
       </div>
       
@@ -410,11 +410,35 @@
     </div>
     <div class="article-entry markdown-body" itemprop="articleBody">
       
-        <hr>
-<p>有的时候我们的开发环境中没有网络，也没有私服，对就是这样无奈（无语），<strong>明明本地<code>maven</code>仓库中有该jar包，却提示没有</strong>。<br>不妨尝试如下的操作，可能会产生意想不到的结果哦。</p>
-<p>1) 删除<code>maven</code>本地仓库<code>repository</code>中名字为<strong>_remote.repositories</strong>的所有文件。<br>2) 删除<code>maven</code>本地仓库<code>repository</code>中<strong>.lastUpdated</strong>为后缀的所有文件。</p>
-<p>执行以上两步，刷新你的项目，然后就可以测试<code>maven</code>打包了。</p>
+        <p> 最近做的项目，用到了支付，使用alipay 移动端支付，一开始一头雾水，总结一下，其实官方文档已经很详细了 ，本次总结全部基于沙箱测试。</p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p> 本文假设你已经有账户可以<a href="https://auth.alipay.com/login/ant_sso_index.htm?goto=https://open.alipay.com/platform/home.htm" target="_blank" rel="external">登陆</a></p>
 <hr>
+<ol>
+<li>登陆完成后，进入<a href="https://openhome.alipay.com/platform/appDaily.htm" target="_blank" rel="external"><code>开放平台-开发者中心-沙箱环境</code></a> 这个一个测试环境，里面有一个默认app ，在沙箱账号菜单还有测试用的买家账号和余额。<ol>
+<li><a href="https://docs.open.alipay.com/291/105971" target="_blank" rel="external">配置公钥私钥</a>，在沙箱环境中配置好应用公钥。</li>
+<li>在项目中引入依赖<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.alipay.sdk<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>alipay-sdk-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.0.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ol>
+<p>到这环境就ok了</p>
+<h2 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h2><p>本篇以alipay移动端网页支付为例 <a href="https://docs.open.alipay.com/203" target="_blank" rel="external">官方文档中很详细</a> 可以仔细阅读，下面简短说明</p>
+<hr>
+<h3 id="支付流程说明："><a href="#支付流程说明：" class="headerlink" title="支付流程说明："></a>支付流程说明：</h3><ol>
+<li>用户在<strong>页面</strong>下单。</li>
+<li><strong>后端</strong>接收页面请求调用<code>alipay</code>生成一个订单。</li>
+<li><code>alipay</code>处理后返回给<strong>后端</strong>一个<code>htm</code>l，里面有<code>form</code> 和 <code>submit</code> 按钮。</li>
+<li>后端返回给<code>页面</code>，页面执行<code>submit</code>后，页面会调用支付宝支付页面，会打开本地支付宝（<strong>沙箱测试版</strong>）或网页登陆后支付。（沙箱版支付宝可在支付宝沙箱测试平台中进行<code>[下载][5]</code>），买家账号也可以在沙箱测试平台找到。</li>
+<li>支付完成后，支付宝会回调你的后台，并且重定向你的前台。告诉你支付的结果。这两个地址是在请求支付宝的时候传的参数。</li>
+<li>后台接收到回调将订单状态进行修改，如果你是在本地测试，注意你给支付宝的回调地址，支付宝处理完毕后，会根据这个地址调用你的服务，也就是说必须让回调地址可以外网访问，可使用<code>ngrok</code> 之类实现，推荐使用<a href="https://www.ngrok.cc/" target="_blank" rel="external"><code>Sunny-Ngrok</code></a>(目前有免费的通道)。</li>
+<li>前端自动重定向到你给支付宝传的通知地址。</li>
+</ol>
+<hr>
+<h3 id="开发-官方实例"><a href="#开发-官方实例" class="headerlink" title="开发(官方实例)"></a>开发(<a href="https://docs.open.alipay.com/203/105285/" target="_blank" rel="external">官方实例</a>)</h3><pre><code> 开发主要由两个方法`调用支付宝生成订单` 和 `接收支付宝回传的支付结果`
+本文实例可能并不适用于你项目的架构，在执行成功调通请求和回调后，可查看开源项目[synergic-developing][8] 示例。
+</code></pre><h4 id="调用支付宝生成订单"><a href="#调用支付宝生成订单" class="headerlink" title="调用支付宝生成订单"></a>调用支付宝生成订单</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest httpRequest,</span></span></span><br><span class="line"><span class="function"><span class="params">HttpServletResponse httpResponse)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">AlipayClient alipayClient = <span class="keyword">new</span> DefaultAlipayClient(<span class="string">"https://openapi.alipay.com/gateway.do"</span>, APP_ID, APP_PRIVATE_KEY, <span class="string">"json"</span>, CHARSET, ALIPAY_PUBLIC_KEY, <span class="string">"RSA2"</span>); <span class="comment">//获得初始化的AlipayClient, 支付宝地址（改为沙箱测试地址），应用id（改为沙箱appid），应用私钥，数据格式，编码格式，阿里公钥（非应用公钥，设置为沙箱支付宝公钥），加密方式。</span></span><br><span class="line">AlipayTradeWapPayRequest alipayRequest = <span class="keyword">new</span> AlipayTradeWapPayRequest();<span class="comment">//创建API对应的request</span></span><br><span class="line">alipayRequest.setReturnUrl(<span class="string">"http://domain.com/CallBack/return_url.jsp"</span>);<span class="comment">//回跳地址页面302</span></span><br><span class="line">alipayRequest.setNotifyUrl(<span class="string">"http://domain.com/CallBack/notify_url.jsp"</span>);<span class="comment">//通知地址服务端接收</span></span><br><span class="line">alipayRequest.setBizContent(<span class="string">"&#123;"</span> +</span><br><span class="line"><span class="string">" \"out_trade_no\":\"20150320010101002\","</span> +</span><br><span class="line"><span class="string">" \"total_amount\":\"88.88\","</span> +</span><br><span class="line"><span class="string">" \"subject\":\"Iphone6 16G\","</span> +</span><br><span class="line"><span class="string">" \"product_code\":\"QUICK_WAP_PAY\""</span> +</span><br><span class="line"><span class="string">" &#125;"</span>);<span class="comment">//填充业务参数</span></span><br><span class="line">String form=<span class="string">""</span>;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">form = alipayClient.pageExecute(alipayRequest).getBody(); <span class="comment">//调用SDK生成表单</span></span><br><span class="line">&#125; <span class="keyword">catch</span> (AlipayApiException e) &#123;</span><br><span class="line">e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line">	httpResponse.setContentType(<span class="string">"text/html;charset="</span> + CHARSET);</span><br><span class="line">	httpResponse.getWriter().write(form);<span class="comment">//直接将完整的表单html输出到页面</span></span><br><span class="line">	httpResponse.getWriter().flush();</span><br><span class="line">	httpResponse.getWriter().close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="接收支付宝回传的支付结果"><a href="#接收支付宝回传的支付结果" class="headerlink" title="接收支付宝回传的支付结果"></a>接收支付宝回传的支付结果</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;String, String&gt; paramsMap = ... <span class="comment">//将异步通知中收到的所有参数都存放到map中</span></span><br><span class="line"><span class="keyword">boolean</span> signVerified = AlipaySignature.rsaCheckV1(paramsMap, ALIPAY_PUBLIC_KEY, CHARSET, SIGN_TYPE) <span class="comment">//调用SDK验证签名</span></span><br><span class="line"><span class="keyword">if</span>(signVerified)&#123;</span><br><span class="line"><span class="comment">// TODO 验签成功后，按照支付结果异步通知中的描述，对支付结果中的业务内容进行二次校验，校验成功后在response中返回success并继续商户自身业务处理，校验失败返回failure</span></span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line"><span class="comment">// TODO 验签失败则记录异常日志，并在response中返回failure.</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><p>在开发中遇到一个问题，回调接口，提示验签失败，后排查发现是在调用alipay生成订单的时候alipayClient中设置支付宝公钥设置错了，设置成了应用公钥了，<strong>这里必须设置支付宝公钥</strong>，在沙箱测试平台中可以找到支付宝公钥。</p>
 
       
     </div>
@@ -446,13 +470,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2017/12/04/1.RxJava综述/" title="1.RxJava综述"><i class="fa fa-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;上一篇</a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2017/11/27/Markdown/" title="Markdown的扩展格式">下一篇&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      <a href="/2017/12/15/jmeter_use/" title="jmeter 并发测试工具">下一篇&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
     </li>
     
   </ul>
