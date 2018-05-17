@@ -25,7 +25,7 @@
 <meta property="og:site_name" content="wucb">
 <meta property="og:description" content="最近做的项目，用到了支付，使用alipay 移动端支付，一开始一头雾水，总结一下，其实官方文档已经很详细了 ，本次总结全部基于沙箱测试。 环境 本文假设你已经有账户可以登陆   登陆完成后，进入开放平台-开发者中心-沙箱环境 这个一个测试环境，里面有一个默认app ，在沙箱账号菜单还有测试用的买家账号和余额。 配置公钥私钥，在沙箱环境中配置好应用公钥。 在项目中引入依赖12345&amp;lt;depe">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-16T10:48:32.950Z">
+<meta property="og:updated_time" content="2018-05-17T02:19:16.814Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="alipay 移动端网页支付">
 <meta name="twitter:description" content="最近做的项目，用到了支付，使用alipay 移动端支付，一开始一头雾水，总结一下，其实官方文档已经很详细了 ，本次总结全部基于沙箱测试。 环境 本文假设你已经有账户可以登陆   登陆完成后，进入开放平台-开发者中心-沙箱环境 这个一个测试环境，里面有一个默认app ，在沙箱账号菜单还有测试用的买家账号和余额。 配置公钥私钥，在沙箱环境中配置好应用公钥。 在项目中引入依赖12345&amp;lt;depe">
@@ -295,21 +295,6 @@
                 <a class="category-link" href="/categories/FastDFS/">FastDFS</a>
               </p>
               <p class="item-title">
-                <a href="/2017/12/13/fastdfs_java/" class="title">FastDFS 使用Java上传下载文件</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2017-12-13T03:10:34.000Z" itemprop="datePublished">2017-12-13</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/FastDFS/">FastDFS</a>
-              </p>
-              <p class="item-title">
                 <a href="/2017/12/13/fastdfs_des/" class="title">FastDFS 简介</a>
               </p>
               <p class="item-date">
@@ -326,6 +311,21 @@
               </p>
               <p class="item-title">
                 <a href="/2017/12/13/fastdfs_docker_conf/" class="title">FastDFS_Docker安装</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2017-12-13T03:10:34.000Z" itemprop="datePublished">2017-12-13</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/FastDFS/">FastDFS</a>
+              </p>
+              <p class="item-title">
+                <a href="/2017/12/13/fastdfs_java/" class="title">FastDFS 使用Java上传下载文件</a>
               </p>
               <p class="item-date">
                 <time datetime="2017-12-13T03:10:34.000Z" itemprop="datePublished">2017-12-13</time>
@@ -427,8 +427,8 @@
 <h3 id="支付流程说明："><a href="#支付流程说明：" class="headerlink" title="支付流程说明："></a>支付流程说明：</h3><ol>
 <li>用户在<strong>页面</strong>下单。</li>
 <li><strong>后端</strong>接收页面请求调用<code>alipay</code>生成一个订单。</li>
-<li><code>alipay</code>处理后返回给<strong>后端</strong>一个<code>htm</code>l，里面有<code>form</code> 和 <code>submit</code> 按钮。</li>
-<li>后端返回给<code>页面</code>，页面执行<code>submit</code>后，页面会调用支付宝支付页面，会打开本地支付宝（<strong>沙箱测试版</strong>）或网页登陆后支付。（沙箱版支付宝可在支付宝沙箱测试平台中进行<code>[下载][5]</code>），买家账号也可以在沙箱测试平台找到。</li>
+<li><code>alipay</code>处理后返回给<strong>后端</strong>一个<code>html</code>，里面有<code>form</code> 和 <code>submit</code> 按钮。</li>
+<li>后端返回给<code>页面</code>，页面执行<code>submit</code>后，页面会调用支付宝支付页面，会打开本地支付宝（<strong>沙箱测试版</strong>）或网页登陆后支付。（沙箱版支付宝可在支付宝沙箱测试平台中进行<a href="https://openhome.alipay.com/platform/appDaily.htm" target="_blank" rel="external">下载</a>），买家账号也可以在沙箱测试平台找到。</li>
 <li>支付完成后，支付宝会回调你的后台，并且重定向你的前台。告诉你支付的结果。这两个地址是在请求支付宝的时候传的参数。</li>
 <li>后台接收到回调将订单状态进行修改，如果你是在本地测试，注意你给支付宝的回调地址，支付宝处理完毕后，会根据这个地址调用你的服务，也就是说必须让回调地址可以外网访问，可使用<code>ngrok</code> 之类实现，推荐使用<a href="https://www.ngrok.cc/" target="_blank" rel="external"><code>Sunny-Ngrok</code></a>(目前有免费的通道)。</li>
 <li>前端自动重定向到你给支付宝传的通知地址。</li>
