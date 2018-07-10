@@ -1,3 +1,3 @@
 http://wucb.top/2018/05/16/alipay/
 http://wucb.top/2017/12/15/jmeter_use/
-http://wucb.top/2017/12/13/fastdfs_des/
+http://wucb.top/2017/12/13/fastdfs_docker_conf/
