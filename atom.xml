@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wucb.top/"/>
-  <updated>2019-01-07T13:25:32.557Z</updated>
+  <updated>2019-01-07T13:29:00.668Z</updated>
   <id>http://wucb.top/</id>
   
   <author>
@@ -21,16 +21,16 @@
     <link href="http://wucb.top/2019/01/07/MySql-Oracle/"/>
     <id>http://wucb.top/2019/01/07/MySql-Oracle/</id>
     <published>2019-01-07T13:25:32.555Z</published>
-    <updated>2019-01-07T13:25:32.557Z</updated>
+    <updated>2019-01-07T13:29:00.668Z</updated>
     
-    <content type="html"><![CDATA[<hr><p>title: mysql-oracle<br>tags: 新建,模板,小书匠<br>date:   2018-10-18 11:32:36<br>categories: Markdown<br>toc: true<br>—mysql 导出数据<br>navicat    导出  注意选择文本结构和  编码</p><p>oracle 导入<br>写一个文件</p><p>load.ctl</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">oad   data   </span><br><span class="line">infile   'load.txt'  --被导入文件名</span><br><span class="line">replace into   table  用户.表名     </span><br><span class="line">(字段1   char   terminated   by   ',',   </span><br><span class="line">字段1   char   terminated   by   ',',   </span><br><span class="line">字段1   char   terminated   by   ',',   </span><br><span class="line">字段1 char   terminated   by   whitespace)</span><br></pre></td></tr></table></figure><p>使用命令导入oracle</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sqlldr userid=用户名/密码@连接  control=load.ctl   <span class="keyword">log</span>=load.log  <span class="keyword">rows</span>=<span class="number">100000</span>  bindsize=<span class="number">1048576</span></span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<hr><p>title: mysql-oracle<br>tags: 数据导入<br>date:   2018-10-18 11:32:36<br>categories: Markdown<br>toc: true<br>—mysql 导出数据<br>navicat    导出  注意选择文本结构和  编码</p><p>oracle 导入<br>写一个文件</p><p>load.ctl</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">oad   data   </span><br><span class="line">infile   'load.txt'  --被导入文件名</span><br><span class="line">replace into   table  用户.表名     </span><br><span class="line">(字段1   char   terminated   by   ',',   </span><br><span class="line">字段1   char   terminated   by   ',',   </span><br><span class="line">字段1   char   terminated   by   ',',   </span><br><span class="line">字段1 char   terminated   by   whitespace)</span><br></pre></td></tr></table></figure><p>使用命令导入oracle</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sqlldr userid=用户名/密码@连接  control=load.ctl   <span class="keyword">log</span>=load.log  <span class="keyword">rows</span>=<span class="number">100000</span>  bindsize=<span class="number">1048576</span></span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
         &lt;hr&gt;
-&lt;p&gt;title: mysql-oracle&lt;br&gt;tags: 新建,模板,小书匠&lt;br&gt;date:   2018-10-18 11:32:36&lt;br&gt;categories: Markdown&lt;br&gt;toc: true&lt;br&gt;—mysql 导出数据&lt;br&gt;navicat
+&lt;p&gt;title: mysql-oracle&lt;br&gt;tags: 数据导入&lt;br&gt;date:   2018-10-18 11:32:36&lt;br&gt;categories: Markdown&lt;br&gt;toc: true&lt;br&gt;—mysql 导出数据&lt;br&gt;navicat    导
       
     
     </summary>
@@ -43,7 +43,7 @@
     <link href="http://wucb.top/2018/10/25/mongodb/"/>
     <id>http://wucb.top/2018/10/25/mongodb/</id>
     <published>2018-10-25T08:08:57.000Z</published>
-    <updated>2019-01-07T13:26:10.170Z</updated>
+    <updated>2019-01-07T13:29:17.539Z</updated>
     
     <content type="html"><![CDATA[<p>解压</p><p>配置和创建目录</p><hr><p>mongodb.conf<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> logpath=/usr/local/mongodb/log/server.log</span><br><span class="line"></span><br><span class="line">-  以追加方式写入日志</span><br><span class="line">logappend=true</span><br><span class="line"></span><br><span class="line">- 是否以守护进程方式运行</span><br><span class="line">fork = true</span><br><span class="line"></span><br><span class="line">- 默认27017</span><br><span class="line">#port = 27017</span><br><span class="line"></span><br><span class="line">- 数据库文件位置</span><br><span class="line">dbpath=/data1/mongo/db</span><br></pre></td></tr></table></figure></p><hr><p>start.sh</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/mongodb/bin/mongod  -f /usr/local/mongodb/conf/mongodb.conf</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -62,7 +62,7 @@
       <category term="Markdown" scheme="http://wucb.top/categories/Markdown/"/>
     
     
-      <category term="新建,模板,小书匠" scheme="http://wucb.top/tags/%E6%96%B0%E5%BB%BA-%E6%A8%A1%E6%9D%BF-%E5%B0%8F%E4%B9%A6%E5%8C%A0/"/>
+      <category term="MongoDB" scheme="http://wucb.top/tags/MongoDB/"/>
     
   </entry>
   
